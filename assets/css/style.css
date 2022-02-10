@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap');
+body {
+  color: white;
+  font-family: Poppins;
+  padding-top: 10%;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+  font-family: Montserrat;
+  font-weight: 800;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px #ebebeb;
+  transition: background-color 1s;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #d6d6d6;
+}
+
+.button4 {border-radius: 12px;}
+
+#content-desktop {display: block;}
+#content-mobile {display: none;}
+
+
+@media screen and (max-width: 500px){
+#content-desktop {display: none;}
+#content-mobile {display: block;}
+}
+p {
+
+  margin-right: 100px;
+  margin-left: 100px;
+}
