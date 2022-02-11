@@ -3,17 +3,37 @@ body {
   color: white;
   font-family: Poppins;
   padding-top: 10%;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000255",GradientType=1); 
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: Montserrat;
   font-weight: 800;
 }
-
+#content-desktop {
+  width: 10%;
+  height: 10%;
+  transition: width 1s, height 1s;
+}
+#content-desktop:hover {
+  width: 15%;
+  height: 15%;
+}
+#content-mobile {
+  width: 50%;
+  height: 50%;
+}
 .button {
-  background-color: #ffffff;
+  background-color: #0146e7;
   border: none;
-  color: black;
+  color: white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -21,21 +41,25 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  box-shadow: 0px 0px 20px #ebebeb;
-  transition: background-color 1s;
+  box-shadow: 0px 0px 20px #0146e7;
   font-family: Poppins;
   font-weight: 600;
+  transition: background-color 1s, border-radius 2.5s;
 }
-
+/*do u like css
+yes*/
 .button:hover {
-  background-color: #d6d6d6;
+  background-color: #001e62;
+  border-radius: 1000px;
 }
 
 .button4 {border-radius: 12px;}
 
 #content-desktop {display: block;}
 #content-mobile {display: none;}
-
+.button:active {
+  background-color: #1c71ff;
+}
 
 @media screen and (max-width: 500px){
 #content-desktop {display: none;}
