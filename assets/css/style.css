@@ -31,9 +31,9 @@ h1, h2, h3, h4, h5, h6, h7 {
   height: 50%;
 }
 .button {
-  background-color: #0146e7;
+  background-color: #ebebeb;
   border: none;
-  color: white;
+  color: black;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  box-shadow: 0px 0px 20px #0146e7;
+  box-shadow: 0px 0px 20px #d6d6d6;
   font-family: Poppins;
   font-weight: 600;
   transition: background-color 1s, border-radius 2.5s;
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6, h7 {
 /*do u like css
 yes*/
 .button:hover {
-  background-color: #001e62;
+  background-color: #c2c2c2;
   border-radius: 1000px;
 }
 
@@ -58,7 +58,7 @@ yes*/
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 .button:active {
-  background-color: #1c71ff;
+  background-color: #ffffff;
 }
 
 @media screen and (max-width: 500px){
