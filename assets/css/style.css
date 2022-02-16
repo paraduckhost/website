@@ -19,28 +19,6 @@ body {
   background-size: cover;
   height: 100%;
 }
-nav { 
-  padding: 25px;
-  position: fixed;
-  top: -2.5px;
-  left: -2.5px;
-  width: 100%;
-  height: 2.5%;
-  background-color: #303030;
-  border-bottom-color: #7a6c0a;
-  border-bottom-style: solid;
-  border-bottom-width: 2.5%;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: bolder;
-  transition: color 1000ms;
-  margin-left: 7.5%;
-}
-nav a:hover {
-  color: #d8bf12;
-}
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: Montserrat;
   font-weight: 800;
@@ -92,14 +70,31 @@ p {
   margin-right: 100px;
   margin-left: 100px;
 }
-#toggleMode {
-  float: right;
-  margin-right: 5%;
-  background-color: #ffa000;
-  box-shadow: 0px 0px 5px #ffa000;
-}
 
 .a {
 font-size:15px;
   color:#ebebeb;
+}
+a:link {
+  color: white; 
+  background-color: transparent; 
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
 }
