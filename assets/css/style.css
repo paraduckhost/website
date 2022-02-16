@@ -1,43 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap');
-* {
-  font-family: Poppins;
-}
-html {
-  scroll-behaviour: smooth;
-}
 body {
   color: white;
   font-family: Poppins;
   padding-top: 10%;
-  background: rgb(24, 28, 36);
-  background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
-  background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
-  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000255",GradientType=1); 
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
 }
+
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: Montserrat;
   font-weight: 800;
 }
-#content-desktop {
-  width: 10%;
-  height: 10%;
-  transition: width 1s, height 1s;
-}
-#content-desktop:hover {
-  width: 15%;
-  height: 15%;
-}
-#content-mobile {
-  width: 50%;
-  height: 50%;
-}
+
 .button {
-  background-color: #ebebeb;
+  background-color: #ffffff;
   border: none;
   color: black;
   padding: 20px;
@@ -47,54 +21,29 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  box-shadow: 0px 0px 20px #d6d6d6;
+  box-shadow: 0px 0px 20px #ebebeb;
+  transition: background-color 1s;
   font-family: Poppins;
   font-weight: 600;
-  transition: background-color 1s, border-radius 2.5s;
 }
+
 .button:hover {
-  background-color: #c2c2c2;
-  border-radius: 1000px;
+  background-color: #d6d6d6;
 }
+
 .button4 {border-radius: 12px;}
+
 #content-desktop {display: block;}
 #content-mobile {display: none;}
-.button:active {
-  background-color: #ffffff;
-}
+
+
 @media screen and (max-width: 500px){
 #content-desktop {display: none;}
 #content-mobile {display: block;}
 }
 p {
+  margin-top: 100px;
+  margin-bottom: 100px;
   margin-right: 100px;
   margin-left: 100px;
-}
-
-.cc {
-font-size:15px;
-  color:#ebebeb;
-}
-a:link {
-  color: white; 
-  background-color: transparent; 
-  text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
-}
-
-a:active {
-  color: white;
-  background-color: transparent;
-  text-decoration: underline;
 }
