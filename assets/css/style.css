@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins&display=swap');
+* {
+  font-family: Poppins;
+}
+html {
+  scroll-behaviour: smooth;
+}
 body {
   color: white;
   font-family: Poppins;
   padding-top: 10%;
-  background: rgb(0,0,0);
+  background: rgb(24, 28, 36);
   background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
   background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
   background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,2,85,1) 100%);
@@ -11,8 +17,30 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
-
+nav { 
+  padding: 25px;
+  position: fixed;
+  top: -2.5px;
+  left: -2.5px;
+  width: 100%;
+  height: 2.5%;
+  background-color: #303030;
+  border-bottom-color: #7a6c0a;
+  border-bottom-style: solid;
+  border-bottom-width: 2.5%;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  transition: color 1000ms;
+  margin-left: 7.5%;
+}
+nav a:hover {
+  color: #d8bf12;
+}
 h1, h2, h3, h4, h5, h6, h7 {
   font-family: Montserrat;
   font-weight: 800;
@@ -46,27 +74,32 @@ h1, h2, h3, h4, h5, h6, h7 {
   font-weight: 600;
   transition: background-color 1s, border-radius 2.5s;
 }
-/*do u like css
-yes*/
 .button:hover {
   background-color: #c2c2c2;
   border-radius: 1000px;
 }
-
 .button4 {border-radius: 12px;}
-
 #content-desktop {display: block;}
 #content-mobile {display: none;}
 .button:active {
   background-color: #ffffff;
 }
-
 @media screen and (max-width: 500px){
 #content-desktop {display: none;}
 #content-mobile {display: block;}
 }
 p {
-
   margin-right: 100px;
   margin-left: 100px;
+}
+#toggleMode {
+  float: right;
+  margin-right: 5%;
+  background-color: #ffa000;
+  box-shadow: 0px 0px 5px #ffa000;
+}
+
+.a {
+font-size:15px;
+  color:#ebebeb;
 }
