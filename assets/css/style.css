@@ -92,8 +92,10 @@ h1, h2, h3, h4, h5, h6, h7 {
 p {
   margin-right: 100px;
   margin-left: 100px;
-  
-.cc {
-font-size:15px;
-color:#ebebeb;
+}
+#toggleMode {
+  float: right;
+  margin-right: 5%;
+  background-color: #ffa000;
+  box-shadow: 0px 0px 5px #ffa000;
 }
