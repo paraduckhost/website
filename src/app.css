@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.text-gradient {
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.tagline {
+		font-size: calc(50px + 2vmin);
+	}
+	.headertext {
+		line-height: calc(1em + 2vmin);
+	}
+}
+
+* {
+	font-family: 'Array', sans-serif;
+	@apply selection:bg-gray-400;
+}
+
+.poppins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.array {
+	font-family: 'Array', sans-serif;
+}
+
+.App {
+	text-align: center;
+}
+
+.App-header {
+	@apply mx-auto min-h-screen flex flex-col items-center justify-center text-white lg:max-w-screen-xl w-screen;
+	/*font-size: calc(10px + 2vmin);*/
+}
+
+.rise-wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+@keyframes rise {
+	0% {
+		transform: translate3d(0, 110%, 0);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translate3d(0, 0, 0);
+		opacity: 1;
+	}
+}
+
+.rise-anim {
+	/*white-space: pre;*/
+	transform: translate3d(0, 110%, 0);
+	opacity: 0;
+	animation-name: rise;
+	animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	animation-duration: 1000ms;
+	animation-delay: var(--delay);
+	animation-fill-mode: forwards;
+}
+
+a {
+	@apply transition-all duration-500 border-b-2 p-0 border-gray-500 hover:border-white;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+scrollbar {
+	scrollbar-width: none;
+}
+
+@font-face {
+    font-family: 'Array';
+    src: url('../array-bold-sub.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
