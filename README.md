@@ -1,3 +1,6 @@
+# Disclaimer
+please do note that this is unhostable because of the way thrzl makes stuff. my apologies for the inconvinience -ahino6942
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
